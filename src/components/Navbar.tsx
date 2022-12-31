@@ -1,4 +1,6 @@
 import React from "react";
+import '../style/Navbar.css';
+import Nav from 'react-bootstrap/Nav';
 
 interface Navbar {
     home: string,
@@ -6,12 +8,23 @@ interface Navbar {
 
 const Navbar: React.FC<Navbar> = ({ home }) => {
     return (
-        <nav>
-            <ul>
-                <li><a target='_blank'>{home}</a></li>
-                <li><a target='_blank'>Skills</a></li>
-            </ul>
-        </nav>
+       <>
+        <Nav defaultActiveKey="/home"> 
+            <Nav.Item></Nav.Item>
+        </Nav>
+        <Nav className="navbar-default">
+            <Nav.Item className="m-3">
+                <Nav.Link href="/home">Active</Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="m-3">
+                <Nav.Link eventKey="link-1">Link</Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="m-3">
+                <Nav.Link eventKey="link-2">Link</Nav.Link>
+            </Nav.Item>
+        </Nav>
+       </>
+        
     );
 };
 
