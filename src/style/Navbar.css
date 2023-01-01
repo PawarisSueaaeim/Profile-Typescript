@@ -1,8 +1,28 @@
-.navbar-default {
-    justify-content: center;
-    align-items: center;
+.navbar {
     display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-menu > li {
+    /* margin: 1rem; */
+}
+
+.navbar-menu-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-menu-mobile {
+        display: block;
+    }
 }
