@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "../style/Navbar.css";
+import "../style/common/Button.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FiMenu , FiX} from "react-icons/fi";
+
+import { FiMenu, FiX } from "react-icons/fi";
 
 interface Navbar {
   home: string;
@@ -13,36 +15,35 @@ interface Navbar {
 }
 
 const Navbar: React.FC<Navbar> = ({ home, title }) => {
-
   const [click, setClick] = React.useState(false);
 
   const handleClick = () => {
     setClick(!click);
   };
 
-  const closeMobileMenu = () => {
-    setClick(false);
-  };
-
-
   return (
     <div className="navbar">
-        <div className="navbar-front">
-            <a href="#">{home}</a>
-        </div>
-        <div className="navbar-mid">
-            <ul className="navbar-menu">
-                <li><a>{title.link1}</a></li>
-                <li><a>{title.link2}</a></li>
-                <li><a>{title.link3}</a></li>
-            </ul>
-        </div>
-        <div className="navbar-menu-mobile" onClick={handleClick}>
-            { click ? (<FiX/>) : (<FiMenu/>)}
-        </div>
-        <div className="navbar-end">
-            <button>Resume</button>
-        </div>
+      <div className="navbar-front">{home}</div>
+      <div className="navbar-mid">
+        <ul className="navbar-menu">
+          <li>{title.link1}</li>
+          <li>{title.link2}</li>
+          <li>{title.link3}</li>
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <button className="btn-theme">Resume Download</button>
+      </div>
+
+      {/* ถ้าขนาดหน้าจอเป็น size 480 ลงมาให้แสดง div นี้ */}
+      <div className={!click ? ("navbar-menu-mobile") : ("navbar-menu-mobile active" )} onClick={handleClick}>
+        {click ? <FiX /> : <FiMenu />}
+        <ul>
+          <li>{title.link1}</li>
+          <li>{title.link2}</li>
+          <li>{title.link3}</li>
+        </ul>
+      </div>
     </div>
   );
 };
