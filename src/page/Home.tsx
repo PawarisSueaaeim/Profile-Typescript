@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const Home = (): void => {
   <div className="navbar-end">
     <button className="btn-theme">Resume Download</button>
   </div>
