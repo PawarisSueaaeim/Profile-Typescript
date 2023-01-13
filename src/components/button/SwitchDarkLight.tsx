@@ -1,7 +1,8 @@
 import React , {useState} from 'react';
-import Form from 'react-bootstrap/Form';
+import '../../style/common/Switch.css';
 
-import  { FiMoon }  from "react-icons/fi";
+import  { FiMoon , FiSun }  from "react-icons/fi";
+
 
 function DarkLightMode() {
 
@@ -12,8 +13,8 @@ function DarkLightMode() {
     };
 
   return (
-    <div>
-      <FiMoon />
+    <div onClick={onClick} className="switch">
+      {lightMode ? <FiMoon /> : <FiSun /> }
     </div>
   );
 }

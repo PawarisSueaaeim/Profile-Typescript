@@ -1,0 +1,5 @@
+.switch {
+    padding-inline: 1rem;
+    transform: 0.3s;
+    transition: 0.3s;
+}
