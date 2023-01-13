@@ -51,7 +51,10 @@
     }
 
     .navbar-end {
-        display: none;
+        margin-inline: 0;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: end;
     }
 
     .navbar-menu-mobile > ul {

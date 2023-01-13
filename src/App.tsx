@@ -11,7 +11,6 @@ function App() {
         link2: 'Experience',
         link3: 'Contact Us',
       }}/>
-
     </div>
     
   );

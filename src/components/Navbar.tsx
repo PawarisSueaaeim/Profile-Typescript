@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "../style/Navbar.css";
 import "../style/common/Button.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { FiMenu, FiX } from "react-icons/fi";
+import Button  from "./button/Button";
 
 interface Navbar {
   home: string;
@@ -32,7 +33,7 @@ const Navbar: React.FC<Navbar> = ({ home, title }) => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="btn-theme">Resume Download</button>
+        <Button/>
       </div>
 
       {/* ถ้าขนาดหน้าจอเป็น size 480 ลงมาให้แสดง div นี้ */}
