@@ -4,7 +4,6 @@ import "../style/common/Button.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { FiMenu, FiX } from "react-icons/fi";
-import SwitchDarkLight  from "./button/SwitchDarkLight";
 
 interface Navbar {
   home: string;
@@ -24,7 +23,7 @@ const Navbar: React.FC<Navbar> = ({ home, title }) => {
 
   return (
     <div className="navbar">
-      <div className="navbar-front">{home}<SwitchDarkLight/></div>
+      <div className="navbar-front">{home}</div>
       <div className="navbar-mid">
         <ul className="navbar-menu">
           <li>{title.link1}</li>
