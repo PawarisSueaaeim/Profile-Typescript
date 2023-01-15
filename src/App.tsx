@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import './App.css';
 import '../src/style/common/Switch.css';
 
+import Home from './page/Home';
+
 import  { FiMoon , FiSun }  from "react-icons/fi";
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
       <div onClick={onClick} className="switch">
         {lightMode ? <FiMoon /> : <FiSun /> }
       </div>
+      <Home/>
     </div>
   );
 }
