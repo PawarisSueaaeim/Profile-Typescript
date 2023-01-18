@@ -3,6 +3,16 @@
     grid-template-columns: auto auto;
 }
 
+.right-content {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content {
+    padding-left: 12px;
+}
+
 .image-profile {
     border-radius: 50%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
