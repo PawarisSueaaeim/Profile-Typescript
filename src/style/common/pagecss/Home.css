@@ -3,14 +3,12 @@
     grid-template-columns: auto auto;
 }
 
-.right-content {
-    text-align: left;
-    justify-content: center;
-    align-items: center;
+.left-content {
+    text-align: center;
 }
 
-.left-content {
-    padding-left: 12px;
+.right-content {
+    text-align: left;
 }
 
 .image-profile {
