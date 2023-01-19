@@ -7,6 +7,7 @@
     height: 100vh;
     color: aliceblue;
     transition: 0.3s ease;
+    z-index: 0;
 }
 
 .home-bg-dark {
@@ -17,20 +18,23 @@
     /* background-attachment: fixed; */
     height: 100vh;
     color: aliceblue;
-    transition: 0.3s ease;;
+    transition: 0.3s ease;
+    z-index: 0;
 }
 
-.comtainer {
-    display: grid;
-    grid-template-columns: auto auto;
+.container {
+    justify-content: center;
+    align-items: center;
 }
 
 .left-content {
     text-align: center;
+    padding-top: 100px;
 }
 
 .right-content {
     text-align: left;
+    padding-top: 100px;
 }
 
 .image-profile {
