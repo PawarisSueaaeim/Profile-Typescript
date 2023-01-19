@@ -1,3 +1,25 @@
+.home-bg-light {
+    background-image: url(".././public/image/home-light.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    color: aliceblue;
+    transition: 0.3s ease;
+}
+
+.home-bg-dark {
+    background-image: url(".././public/image/home-dark.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    color: aliceblue;
+    transition: 0.3s ease;;
+}
+
 .comtainer {
     display: grid;
     grid-template-columns: auto auto;
