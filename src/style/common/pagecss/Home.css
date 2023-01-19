@@ -1,5 +1,5 @@
 .home-bg-light {
-    background-image: url("../../../../public/image/home-light.svg");
+    background-image: url("../../../../public/image/contact-light.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 }
 
 .home-bg-dark {
-    background-image: url("../../../../public/image/home-dark.svg");
+    background-image: url("../../../../public/image/contact-dark.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
