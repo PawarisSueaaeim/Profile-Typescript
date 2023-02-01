@@ -1,10 +1,10 @@
 import React from "react";
 
 interface SwitchDarkLightMode {
-    onClick: (event: Event) => void;
+    onClick: ;
 }
 
-const SwitchDarkLightMode = () => {
+const SwitchDarkLightMode: React.FC<SwitchDarkLightMode> = () => {
     const [lightMode, setLightmode] = React.useState(true);
 
     const onClick = () => {
