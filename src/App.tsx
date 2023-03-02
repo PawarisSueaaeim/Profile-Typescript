@@ -25,7 +25,7 @@ function App() {
       <div onClick={onClick} className="switch">
         {lightMode ? <FiMoon /> : <FiSun /> }
       </div>
-      <Home/>
+      <Home bgmode={lightMode}/>
     </div>
   );
 }

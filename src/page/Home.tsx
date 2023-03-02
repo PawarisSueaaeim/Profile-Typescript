@@ -11,9 +11,14 @@ const dataHome = {
   title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, placeat. Praesentium nisi numquam exercitationem animi assumenda voluptates. Veritatis quo distinctio, ipsam amet, iste a eligendi voluptatibus officiis commodi culpa suscipit?"
 };
 
-const Home = () => {
+interface IHome {
+  bgmode: boolean;
+}
+
+const Home: React.FC<IHome> = ({bgmode}) => {
+  
   return (
-    <div className="home-bg-dark">
+    <div className={`${bgmode ? "home-bg-light" : "home-bg-dark"}`}>
       <Container>
         <Row className="container">
         <Col sm={4} className="left-content">
