@@ -21,14 +21,14 @@ const Home: React.FC<IHome> = ({bgmode}) => {
     <div className={`${bgmode ? "home-bg-light" : "home-bg-dark"}`}>
       <Container>
         <Row className="container">
-        <Col sm={4} className="left-content">
-          <img className="image-profile" src={dataHome.image}></img>
-        </Col>
-        <Col sm={8} className="right-content">
-          <p>{dataHome.title}</p>
-        </Col>
-      </Row>
-    </Container>
+          <Col sm={4} className="left-content">
+            <img className="image-profile" src={dataHome.image}></img>
+          </Col>
+          <Col sm={8} className="right-content">
+            <p>{dataHome.title}</p>
+          </Col>
+        </Row>
+      </Container>
     </div>
    
   );

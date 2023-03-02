@@ -16,12 +16,14 @@ function App() {
     };
 
   return (
-    <div className={`App ${lightMode? 'light-mode': 'dark-mode'}`}>
-      <Navbar home={'Home'} title={{
-        link1: 'About',
-        link2: 'Experience',
-        link3: 'Contact Us',
-      }}/>
+    <div>
+      <div className="navbar">
+        <Navbar home={'Home'} title={{
+          link1: 'About',
+          link2: 'Experience',
+          link3: 'Contact Us',
+        }}/>
+      </div>
       <div onClick={onClick} className="switch">
         {lightMode ? <FiMoon /> : <FiSun /> }
       </div>
